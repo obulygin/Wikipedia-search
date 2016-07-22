@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wikipedia search</title>
+		<meta charset='utf-8'> 
+		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+   		<link rel='stylesheet' href='styles.css' type='text/css'>
+	</head>
+	<body>
+
+		<div class='container'>
+  			<h1 class='text-center'>Wikipedia search</h1>
+  			<div class='searchBlock input-group text-center'>
+    			<input type='search' id='search' placeholder='Search on Wikipedia' class='form-control text-center'>
+    			<span class='input-group-btn'>
+      				<button type='button' class='searchButton btn btn-primary'><i class='fa fa-search'></i></button>
+    			</span>
+  			</div>
+  			<form action='https://en.wikipedia.org/wiki/Special:Random' target='_blank' class='rndButton'>
+    			<button class='btn btn-info rndButton'>Random article</button>
+  			</form>
+  			<div class='searchResults'></div>
+  			<footer>
+    			<p>Written and coded by <a href='https://ru.linkedin.com/in/obulygin' target='_blank'>Oleg Bulygin</a>.</p>
+  			</footer>
+		</div>
+
+
+		<script src='https://code.jquery.com/jquery-2.2.4.min.js' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' crossorigin='anonymous'></script>
+		<script src='https://use.fontawesome.com/915f0177a7.js'></script>
+		<script type='text/javascript' src='script.js'></script>
+	</body>
+</html>
